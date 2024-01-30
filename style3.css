@@ -1,0 +1,391 @@
+body#custom-body {
+  background-color: black;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainn {
+  background-color: #ededed;
+  height: 70vh;
+  width: 40%;
+  border-radius: 10px;
+  position: absolute;
+  top: 13%;
+}
+.hh {
+  color: black;
+  font-size: 24px;
+  font-family: "Arial Rounded MT BOLd";
+  position: relative;
+  top: 2%;
+  left: 33%;
+}
+.input-data {
+  height: 4vh;
+  width: 43%;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+
+.input-data input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid rgb(116, 116, 116);
+  background-color: #ededed;
+  position: relative;
+  left: 5%;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+}
+
+.input-data label {
+  color: rgb(110, 110, 110);
+  position: absolute;
+  bottom: 5px;
+  left: 5%;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+.input-data:focus-within label,
+.input-data input:valid + label {
+  transform: translateY(-20px);
+}
+
+.s:focus {
+  outline: none;
+}
+
+.input2-data {
+  height: 4vh;
+  width: 43%;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+.input2-data input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid rgb(116, 116, 116);
+  background-color: #ededed;
+  position: relative;
+  left: 120%;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  bottom: 32px;
+}
+
+.input2-data label {
+  color: rgb(110, 110, 110);
+  position: absolute;
+  bottom: 38px;
+  left: 120%;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+.input2-data:focus-within label,
+.input2-data input:valid + label {
+  transform: translateY(-20px);
+}
+
+.input3-data {
+  height: 4vh;
+  width: 43%;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+.input3-data input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid rgb(116, 116, 116);
+  background-color: #ededed;
+  position: relative;
+  left: 5%;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  bottom: 5px;
+}
+
+.input3-data label {
+  color: rgb(110, 110, 110);
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+.input3-data input.s3:focus + label,
+.input3-data input.s3:valid + label {
+  transform: translateY(-20px);
+}
+
+.input3-data input:focus {
+  outline: none;
+}
+
+.input4-data {
+  height: 4vh;
+  width: 88%;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+.input4-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgb(116, 116, 116);
+  background-color: #ededed;
+  position: relative;
+  left: 12px;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  top: 20px;
+}
+
+.input4-data label {
+  color: rgb(110, 110, 110);
+  position: absolute;
+  bottom: 2px;
+  left: 2%;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  top: 19px;
+}
+
+.input4-data input.s4:focus + label,
+.input4-data input.s4:valid + label {
+  transform: translateY(-20px);
+}
+
+.input4-data input:focus {
+  outline: none;
+}
+
+
+.input5-data {
+  height: 4vh;
+  width: 43%;
+  position: relative;
+  top: 15%;
+  left: 2%;
+}
+
+.input5-data input.s5 {
+  height: 100%;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid rgb(116, 116, 116);
+  background-color: #ededed;
+  position: relative;
+  left: 5%;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+
+}
+
+.input5-data label {
+  color: rgb(110, 110, 110);
+  position: absolute;
+  left: 5%;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  transform: translateY(0); /* Reset the initial position */
+}
+
+.input5-data input.s5:focus + label,
+.input5-data input.s5:valid + label {
+  transform: translateY(-20px);
+}
+
+.s5:focus {
+  outline: none;
+  cursor: text; /* Set the cursor to text to make the input field interactive */
+}
+
+.input6-data {
+  height: 4vh;
+  width: 43%;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+.input6-data input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid rgb(116, 116, 116);
+  background-color: #ededed;
+  position: relative;
+  left: 120%;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  top: 17px;
+}
+
+.input6-data label {
+  color: rgb(110, 110, 110);
+  position: absolute;
+  left: 120%;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  top: 20px;
+}
+
+.input6-data:focus-within label,
+.input6-data input:valid + label {
+  transform: translateY(-20px);
+}
+
+.input7-data {
+  height: 4vh;
+  width: 88%;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+.input7-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgb(116, 116, 116);
+  background-color: #ededed;
+  position: relative;
+  left: 12px;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  top: 50px;
+}
+
+.input7-data label {
+  color: rgb(110, 110, 110);
+  position: absolute;
+  bottom: 2px;
+  left: 2%;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  top: 49px;
+}
+
+.input7-data input.s:focus + label,
+.input7-data input.s:valid + label {
+  transform: translateY(-20px);
+}
+
+.input7-data input:focus {
+  outline: none;
+}
+.input8-data {
+  height: 4vh;
+  width: 43%;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+
+.input8-data input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid rgb(109, 109, 109);
+  background-color: #ededed;
+  position: relative;
+  left: 5%;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  top: 80px;
+}
+
+.input8-data label {
+  color: rgb(110, 110, 110);
+  position: absolute;
+
+  left: 5%;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  top: 80px;
+}
+
+.input8-data:focus-within label,
+.input8-data input:valid + label {
+  transform: translateY(-20px);
+}
+.input9-data {
+  height: 4vh;
+  width: 43%;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+
+.input9-data input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid rgb(109, 109, 109);
+  background-color: #ededed;
+  position: relative;
+  left: 5%;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  top: 110px;
+}
+
+.input9-data label {
+  color: rgb(110, 110, 110);
+  position: absolute;
+
+  left: 5%;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  top: 108px;
+}
+
+.input9-data:focus-within label,
+.input9-data input:valid + label {
+  transform: translateY(-20px);
+}
+.btn2 {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 40%;
+  position: relative;
+  left: 29%;
+  top: 200px;
+}

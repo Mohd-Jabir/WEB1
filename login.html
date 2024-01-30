@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container" id="container">
+        <div class="form-container sign-up">
+          <form id="form1" onsubmit="return validate()">
+            <h1>Create Account</h1>
+            <span>or use your email for registeration</span>
+            <input type="text" placeholder="Name"  id="username"/>
+            <span id="userid" class="text-danger font-weight-bold"></span>
+            <input type="email" placeholder="Email" id="Email" />
+            <span id="emailid"></span>
+            <input type="password" placeholder="Password" id="password"/>
+            <span id="passid"></span>
+          <button>Sign Up</button>
+          </form>
+        </div>
+        <div class="form-container sign-in">
+          <form id="sighform" name="form2" onsubmit=" return validation2()">
+            <h1>Sign In</h1>
+            
+            <span>use your email password</span>
+            <input type="email" placeholder="Email" id="Email2" />
+            <span id="singemail"></span>
+            <input type="password" placeholder="Password" id="password2" />
+            <span id="signpass"></span>
+            <a href="#">Forget Your Password?</a>
+           <button>Sign In</button>
+          </form>
+        </div>
+        <div class="toggle-container">
+          <div class="toggle">
+            <div class="toggle-panel toggle-left">
+              <h1>Welcome Back!</h1>
+              <p>Enter your personal details to use all of site features</p>
+              <button class="hidden" id="login">Sign In</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+              <h1>Hello, Friend!</h1>
+              <p>
+                Register with your personal details to use all of site features
+              </p>
+              <button class="hidden" id="register">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <img  class="back2"src="rog-removebg-preview.png">
+      </div>
+     
+    
+      
+
+    <script>
+      const container = document.getElementById("container");
+      const registerBtn = document.getElementById("register");
+      const loginBtn = document.getElementById("login");
+
+      registerBtn.addEventListener("click", () => {
+        container.classList.add("active");
+      });
+
+      loginBtn.addEventListener("click", () => {
+        container.classList.remove("active");
+      });
+
+        
+
+      function validate() {
+  var user = document.getElementById('username').value;
+  var email = document.getElementById('Email').value;
+  var password = document.getElementById('password').value;
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for a basic email validation
+  var usernameRegex = /^[a-zA-Z]+$/; // Regular expression for allowing only letters in the username
+
+  if (user === "") {
+    document.getElementById('userid').innerHTML = "Please fill the username";
+    return false;
+  } else if (!usernameRegex.test(user) || user.length < 3) {
+    document.getElementById('userid').innerHTML = "Username should contain only letters and be at least 3 characters long";
+    return false;
+  } else {
+    document.getElementById('userid').innerHTML = "";
+  }
+
+  if (email === "") {
+    document.getElementById('emailid').innerHTML = "Please fill the email id";
+    return false;
+  } else if (!emailRegex.test(email)) {
+    document.getElementById('emailid').innerHTML = "Please enter a valid email address";
+    return false;
+  } else {
+    document.getElementById('emailid').innerHTML = "";
+  }
+
+  if (password === "") {
+    document.getElementById('passid').innerHTML = "Please fill the password";
+    return false;
+  } else if (password.length < 6) {
+    document.getElementById('passid').innerHTML = "Password should be at least 6 characters long";
+    return false;
+  } else if (!/[a-z]/.test(password) || !/[A-Z]/.test(password) || !/\d/.test(password)) {
+    document.getElementById('passid').innerHTML = "Password should contain at least one lowercase letter, one uppercase letter, and one digit";
+    return false;
+  } else {
+    document.getElementById('passid').innerHTML = "";
+    return true; // Added this line to indicate successful validation
+  }
+}
+
+
+
+    
+
+    
+function validation2() {
+  var email = document.getElementById('Email2').value;
+  var password = document.getElementById('password2').value;
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for a basic email validation
+
+  if (email === "") {
+    document.getElementById('singemail').innerHTML = "Please fill the email";
+    return false;
+  } else if (!emailRegex.test(email)) {
+    document.getElementById('singemail').innerHTML = "Please enter a valid email address";
+    return false;
+  } else {
+    document.getElementById('singemail').innerHTML = "";
+  }
+
+  if (password === "") {
+    document.getElementById('signpass').innerHTML = "Please fill the password";
+    return false;
+  } else if (password.length < 6) {
+    document.getElementById('signpass').innerHTML = "Password should be at least 6 characters long";
+    return false;
+  } else if (!/[a-z]/.test(password) || !/[A-Z]/.test(password) || !/\d/.test(password)) {
+    document.getElementById('signpass').innerHTML = "Password should contain at least one lowercase letter, one uppercase letter, and one digit";
+    return false;
+  } else {
+    document.getElementById('signpass').innerHTML = "";
+    return true; // Added this line to indicate successful validation
+  }
+}
+
+    </script>
+  </body>
+</html>
